@@ -4,7 +4,7 @@
 
 一个便捷的命令行工具，用于自动下载最新版本的Masa模组集合（如Litematica、MiniHUD、Tweakeroo等）
 
-~~ModRinth不是最新版，天天从GitHub上爬取太难了~~
+~~modrinth不是最新版，天天从GitHub上爬取太难了~~
 
 ## 📋 安装步骤
 
