@@ -54,9 +54,8 @@ def load_config(): # 加载配置文件
         with open(CONFIG_FILE) as f:
             config = json.load(f)
 
-
         download_dir = config.get('download_dir', None)
-        if len(download_dir) > 0:
+        if download_dir:
             path_obj = Path(download_dir).expanduser()
             path_obj = path_obj.resolve()
         else:
@@ -124,12 +123,15 @@ def download_file(url, save_path): # 下载文件
 
 def main():
     config = load_config()
+    questionary.press_any_key_to_continue(f"当前下载目录为: {config['download_dir']}\n按任意键继续...").ask()
     selected_repos = select_repos(config['repositories'])
     if not selected_repos:
         print("No repositories selected.")
         exit()
 
     delete_old = questionary.confirm("是否删除旧版本？", default=True).ask()
+
+    
     
     for repo in selected_repos:
         owner = repo['owner']
