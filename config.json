@@ -1,0 +1,35 @@
+{
+    "repositories": [
+        {
+            "owner": "sakura-ryoko",
+            "repo": "litematica",
+            "version": "1.21.4"
+        },
+        {
+            "owner": "sakura-ryoko",
+            "repo": "malilib",
+            "version": "1.21.4"
+        },
+        {
+            "owner": "sakura-ryoko",
+            "repo": "tweakeroo",
+            "version": "1.21.4"
+        },
+        {
+            "owner": "sakura-ryoko",
+            "repo": "minihud",
+            "version": "1.21.4"
+        },
+        {
+            "owner": "sakura-ryoko",
+            "repo": "itemscroller",
+            "version": "1.21.4"
+        },
+        {
+            "owner": "sakura-ryoko",
+            "repo": "syncmatica",
+            "version": "1.21.4"
+        }
+    ],
+    "download_dir": "downloads"
+}
